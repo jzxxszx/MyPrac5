@@ -1,0 +1,30 @@
+﻿<Window x:Class="MyPrac5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyPrac5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Comic Sans MS"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="FirstPageButton" Width="30" Click="FirstPageButton_Click">1</Button>
+            <Button x:Name="TwoPageButton" Width="30" Click="TwoPageButton_Click">2</Button>
+            <Button x:Name="ThreePageButton" Width="30" Click="ThreePageButton_Click">3</Button>
+            <Button x:Name="FourPageButton" Width="30" Click="FourPageButton_Click">4</Button>
+            <Button x:Name="FivePageButton" Width="30" Click="FivePageButton_Click">5</Button>
+            <TextBlock Text="Дополнительные задания:" VerticalAlignment="Center"/>
+            <Button x:Name="Dop1PageButton" Width="45" Click="Dop1PageButton_Click">Доп1</Button>
+            <Button x:Name="Dop2PageButton" Width="45" Click="Dop2PageButton_Click">Доп2</Button>
+        </StackPanel>
+        <Frame Grid.Row="1" x:Name="MyFrame"></Frame>
+    </Grid>
+</Window>
